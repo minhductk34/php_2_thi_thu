@@ -1,0 +1,23 @@
+{
+    "name": "admin/base_exam_02",
+    "description": "Làm thi th?",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Admin\\BaseExam02\\": "src/",
+            "App\\": "app/"
+
+        }
+    },
+    "authors": [
+        {
+            "name": "minhductk34",
+            "email": "minhductk34@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/events": "^9.52",
+        "eftec/bladeone": "^4.11",
+        "phroute/phroute": "^2.2"
+    }
+}
