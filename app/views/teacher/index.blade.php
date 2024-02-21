@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section('content')
-<a href="{{BASE_URL}}/teacher/create">Add Teacher</a>
+<a href="{{route("/teacher/create/")}}">Add Teacher</a>
 <table border="1">
     <thead>
         <th>ID</th>
@@ -23,7 +23,7 @@
                 <a href="{{BASE_URL}}teacher/edit/{{$c->id }}/" class="fa fa-edit">
                         <button>Edit</button>
                     </a>
-                    <a href="{{BASE_URL}}teacher/delete/{{$c->id }}" class="fa fa-trash">
+                    <a href="{{route("teacher/delete/")}}{{$c->id }}" class="fa fa-trash">
                         <button onclick="return confirm('Are you sure you want to delete this categories?');">Delete</button>
                     </a>
                 </th>

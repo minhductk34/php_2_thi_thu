@@ -9,8 +9,9 @@
 <?php
 
 ?>
+
 <body>
-    <form action="{{ BASE_URL }}teacher/update/{{$teachers->id}}" method="post">
+    <form action=" {{route("teacher/update/")}}{{$teachers->id}}" method="post">
         @csrf
         @method('POST')
         <label for="name_category">
@@ -21,21 +22,21 @@
 
         <label for="email">
             <strong>email:</strong>
-            <input type="email"  name="email" value="{{ $teachers->email }}">
+            <input type="email" name="email" value="{{ $teachers->email }}">
         </label><br>
         <label for="salary">
             <strong>salary:</strong>
-            <input type="text" name="text"value="{{ $teachers->salary }}">
+            <input type="text" name="text" value="{{ $teachers->salary }}">
         </label><br>
         <label for="school">
             <strong>school:</strong>
-            <input type="text"name="school" value="{{ $teachers->school }}">
+            <input type="text" name="school" value="{{ $teachers->school }}">
         </label><br>
 
         <button type="submit" class="btn btn-primary">Update</button>
     </form>
 
-    <a href="{{ BASE_URL }}/"> List</a>
+    <a href=" {{route("/")}}"> List</a>
 </body>
 
 </html>

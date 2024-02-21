@@ -6,7 +6,7 @@
     <title>Create Form</title>
 </head>
 <body>
-<form action="{{BASE_URL}}teacher/add" method="post" >
+<form action="{{route("teacher/add")}}" method="post" >
         @csrf
         @method('POST')
 
